@@ -47,7 +47,7 @@ import pandas as pd
 HERE = Path(__file__).parent
 
 # Change this to your default scenario
-INPUT_XLSX = HERE / "data" / "sample_scenario_mget_v6.xlsx"
+INPUT_XLSX = HERE.parent / "data" / "mget_input_scenario.xlsx"
 
 # Optional: allow overriding the input file from the command line:
 #   python my_load_all.py path/to/other_scenario.xlsx
