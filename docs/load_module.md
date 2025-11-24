@@ -1,4 +1,4 @@
-# Data loading module `my_load_all.py`
+# Data loading module `mget_load_data.py`
 
 ## 1. Purpose
 
