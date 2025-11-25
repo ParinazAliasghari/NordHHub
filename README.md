@@ -1,22 +1,32 @@
-NordHHub/
-│
-├── data/ # Input Excel scenarios
-│ └── mget_input_scenario.xlsx
-│
-├── src/ # All Python source code
-│ ├── mget_load_data.py # Data loader (reads the Excel scenario)
-│ ├── mget_main_model.py # Main model: build + solve + call reporting
-│ └── report.py # Reporting and CSV export tools
-│
-├── results/ # Auto-created output files (one folder per scenario)
-│ └── results_<scenario>/ # Example: results_mget_input_scenario/
-│ ├── summary_<timestamp>.csv
-│ ├── flows_<timestamp>.csv
-│ ├── production_<timestamp>.csv
-│ ├── expansion_<timestamp>.csv
-│ ├── borrowed_<timestamp>.csv
-│ ├── deficits_<timestamp>.csv
-│ └── <scenario>_runs_log.csv # Cumulative log of all runs
-│
-└── README.md
+# NordHHub
+
+**Multigas Network Optimization Model (Python)**  
+Data Loader · Model Builder · Reporting System · Documentation
+
+---
+
+## 📁 Project Structure
+
+### **1. `data/` — Input Scenarios**
+This folder contains Excel files defining model inputs.
+
+- **`mget_input_scenario.xlsx`** – Main scenario file with nodes, arcs, fuels, costs, and demand data.
+
+---
+
+### **2. `src/` — Python Source Code**
+
+| File | Description |
+|------|-------------|
+| **`mget_load_data.py`** | Reads the Excel scenario and prepares all parameter dictionaries. |
+| **`mget_main_model.py`** | Main script: builds the Pyomo model, solves it, and calls reporting. |
+| **`report.py`** | Reporting module: creates CSV outputs + run-log tracking system. |
+
+---
+
+### **3. `results/` — Auto-Generated Output**
+
+Each scenario gets its own folder:
+
+
 
