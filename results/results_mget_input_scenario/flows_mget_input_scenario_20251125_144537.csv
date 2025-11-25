@@ -1,0 +1,10 @@
+arc,from,to,fuel,year,hour,value,unit_cost
+A_C,A,C,gas,2025,1,4.0,2.0
+A_C,A,C,gas,2025,2,4.0,2.0
+A_C,A,C,gas,2025,3,4.0,2.0
+B_A,B,A,gas,2025,1,10.0,2.0
+B_A,B,A,gas,2025,2,10.0,2.0
+B_A,B,A,gas,2025,3,10.0,2.0
+C_A,C,A,hydrogen,2025,1,6.0,2.0
+C_A,C,A,hydrogen,2025,2,6.0,2.0
+C_A,C,A,hydrogen,2025,3,6.0,2.0

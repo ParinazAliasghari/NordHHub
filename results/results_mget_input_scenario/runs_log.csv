@@ -1,0 +1,2 @@
+timestamp,feasiblity,error,error stage,total_cost,demand,solver,build_s,solve_s,total_s
+25/11/2025 14:45,YES,none,none,60274.2,60.0,gurobi,0.5173302999992302,0.02635540000119363,0.5612459000003582

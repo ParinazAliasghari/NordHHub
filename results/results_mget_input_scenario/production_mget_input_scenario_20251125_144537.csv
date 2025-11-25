@@ -1,0 +1,7 @@
+node,fuel,year,hour,value,unit_cost
+B,gas,2025,1,10.0,1.0
+B,gas,2025,2,10.0,1.0
+B,gas,2025,3,10.0,1.0
+C,hydrogen,2025,1,8.0,5.0
+C,hydrogen,2025,2,8.0,5.0
+C,hydrogen,2025,3,8.0,5.0
