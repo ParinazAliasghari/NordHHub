@@ -1,6 +1,7 @@
 # Nodes input file (`nodes.csv`)
 
-This file defines all spatial nodes used in the MGET model (e.g. NUTS3 regions where demand, production, and network connections are located).
+This file defines all spatial nodes used in the MGET model  
+(e.g., NUTS3 regions where demand, production, and network connections are located).
 
 Each row corresponds to **one node**.
 
@@ -8,21 +9,21 @@ Each row corresponds to **one node**.
 
 ## Columns
 
-| Column name      | Type / format | Description |
-|------------------|---------------|-------------|
-| `idx`            | integer       | Simple running index (1, 2, 3, …). Mainly for checking/debugging large datasets; not used in equations. |
-| `node_id`        | string        | Unique identifier of the node, usually the NUTS3 code (e.g. `ES300`, `ES611`, `PT186`). This is the ID that appears in the mathematical model as set **n**. |
-| `region`         | string        | Larger regional grouping of the node. In your current data this is often NUTS1 / macro‐region (e.g. `AFR`, `EU`). Useful for aggregation and plotting. |
-| `country`        | string        | Country code of the node (e.g. `ES`, `PT`, `DZ`). |
-| `nuts2`          | string        | NUTS2 code to which this node (NUTS3) belongs (e.g. `ES30`, `ES61`). Used for multi-level regional analysis. |
-| `node_name`      | string        | Human-readable name of the node (e.g. *Madrid*, *Cuenca*, *Alto Alentejo*). Used in tables, plots, and maps. |
-| `lat`            | float (°)     | Latitude in decimal degrees (WGS84). Positive = north, negative = south. Used for mapping. |
-| `lon`            | float (°)     | Longitude in decimal degrees (WGS84). Positive = east, negative = west. Used for mapping. |
-| `gas_share`      | float         | Share of total **gas** demand assigned to this node (typically between 0 and 1). Node-level gas demand can be calculated as `country_gas_demand × gas_share`. |
-| `hydrogen_share` | float         | Share of total **hydrogen** demand assigned to this node (0–1). Node-level hydrogen demand can be calculated similarly. |
-| `status`         | integer (0/1) | Indicator whether the node is active in the scenario. Convention: `1` = node is included in the model; `0` = node is defined in the dataset but not used in this run. |
-| `source`         | string        | Short code or text describing the data source (e.g. `Eurostat_2020`, `assumption`, `GIS`). Useful for transparency and reproducibility. |
-| `comments`       | string        | Free-text notes about this node (e.g. data issues, special assumptions, mapping decisions). |
+| Column name | Type / format | Description |
+|-------------|---------------|-------------|
+| <span style="color:green;">`idx`</span> | integer | Simple running index (1, 2, 3, …). Mainly for checking large datasets; **not used in equations**. |
+| <span style="color:green;">`node_id`</span> | string | Unique identifier of the node, usually the NUTS3 code (e.g. `ES300`). Appears in model set **n**. |
+| <span style="color:green;">`region`</span> | string | Larger regional grouping (NUTS1 or macro-region). Useful for aggregation and plotting. |
+| <span style="color:green;">`country`</span> | string | Country code (e.g. `ES`, `PT`, `DZ`). |
+| <span style="color:blue;">`nuts2`</span> | string | Parent NUTS2 region (e.g. `ES30`). Helps with multi-level analysis. |
+| <span style="color:blue;">`node_name`</span> | string | Human-readable name (e.g. *Madrid*, *Alto Alentejo*). |
+| <span style="color:blue;">`lat`</span> | float | Latitude (WGS84). Used for maps. |
+| <span style="color:blue;">`lon`</span> | float | Longitude (WGS84). Used for maps. |
+| <span style="color:blue;">`gas_share`</span> | float | Share of **gas** demand assigned to this node (0–1). |
+| <span style="color:blue;">`hydrogen_share`</span> | float | Share of **hydrogen** demand assigned to this node (0–1). |
+| <span style="color:green;">`status`</span> | 0/1 integer | `1` = active node, `0` = defined but unused. |
+| <span style="color:blue;">`source`</span> | string | Data source (e.g. `Eurostat2020`). |
+| <span style="color:blue;">`comments`</span> | string | Free-text notes (optional). |
 
 ---
 
