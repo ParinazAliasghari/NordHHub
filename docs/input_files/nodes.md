@@ -1,7 +1,6 @@
 # Nodes input file (`nodes.csv`)
 
-This file defines all spatial nodes used in the MGET model  
-(e.g. NUTS3 regions where demand, production, and network connections are located).
+This file defines all spatial nodes used in the MGET model (e.g. NUTS3 regions where demand, production, and network connections are located).
 
 Each row corresponds to **one node**.
 
