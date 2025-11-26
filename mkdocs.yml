@@ -1,4 +1,4 @@
-site_name: NordHHub Documentation
+site_name: Documentation
 theme:
   name: material
 
@@ -6,9 +6,11 @@ nav:
   - Home: index.md
   - Introduction: docs/introduction.md
   - Model Elements:
-      - Data Loading: docs/data_loading.md
+      - Data Loading: docs/load_module.md
       - Model Builder: docs/model_builder.md
       - Reporting: docs/reporting.md
+  - Input Files:
+      - Nodes: input_files/nodes.md
   - Usage:
       - Running the Model: docs/run_model.md
       - Results: docs/results.md
