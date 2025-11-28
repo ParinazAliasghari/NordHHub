@@ -11,23 +11,23 @@ given fuel and/or technology).
 
 ## Columns
 
-| Column      | Type / format | Used in Python model | Description |
-|------------|---------------|----------------------|-------------|
-| `scalar`   | string        | **Yes**              | Short ID of the parameter as used in the model code (e.g. `c_a`, `f_ab`). This is the main key that tells the loader which parameter this row belongs to. |
-| `name_id`  | string        | **Yes**              | Secondary identifier, usually the technology / asset / option the scalar applies to (e.g. `BFPipe`, `Bidir`). Together with `scalar` and `fuel` it makes the entry unique. |
-| `fuel`     | string        | **Yes** (for fuel-specific parameters) | Fuel / carrier this entry applies to (e.g. `gas`, `hydrogen`, `carbon`). Can be left empty for fuel-independent parameters. |
-| `value`    | float         | **Yes**              | Numerical value of the parameter in the given `unit`. This is what is actually used in the Pyomo model. |
-| `low`      | float         | *Optional / not yet used* | Lower bound for the parameter (kept for documentation / future calibration; currently ignored by the Python model). |
-| `high`     | float         | *Optional / not yet used* | Upper bound for the parameter (kept for documentation / future calibration; currently ignored by the Python model). |
-| `type`     | string        | *Optional / not yet used* | Qualitative type of the parameter, e.g. `var` (variable), `fix` (fixed), etc. Mainly descriptive at the moment. |
-| `unit`     | string        | **Recommended**      | Unit of `value`, e.g. `€/MWh/100 km`, `per project`. Helps interpret results and keeps the dataset self-documented. |
-| `full_name`| string        | **Recommended**      | Human-readable name of the parameter, e.g. “arc cost”, “fix bidirection cost”. Used only for documentation. |
-| `source`   | string        | **Recommended**      | Short code or text describing the data source (e.g. `IEA2020`, `assumption`, `literature`). Useful for tracing where numbers came from. |
-| `comment`  | string        | **Recommended**      | Free-text notes about this parameter (e.g. calibration notes, methodological choices, links to papers). |
+| Column      | Type / format | Description |
+|------------|---------------|-------------|
+| `scalar`   | string        | Short ID of the parameter as used in the model code (e.g. `c_a`, `f_ab`). This is the main key that tells the loader which parameter this row belongs to. |
+| `name_id`  | string        | Secondary identifier, usually the technology / asset / option the scalar applies to (e.g. `BFPipe`, `Bidir`). Together with `scalar` and `fuel` it makes the entry unique. |
+| `fuel`     | string        | Fuel / carrier this entry applies to (e.g. `gas`, `hydrogen`, `carbon`). Can be left empty for fuel-independent parameters. |
+| `value`    | float         | Numerical value of the parameter in the given `unit`. This is what is actually used in the optimization model. |
+| `low`      | float         | *Optional / not yet used* — lower bound for the parameter (kept for documentation / future calibration). |
+| `high`     | float         | *Optional / not yet used* — upper bound for the parameter (kept for documentation / future calibration). |
+| `type`     | string        | *Optional / not yet used* — qualitative type of the parameter, e.g. `var` (variable), `fix` (fixed), etc. Mainly descriptive at the moment. |
+| `unit`     | string        | Unit of `value`, e.g. `€/MWh/100 km`, `per project`. Helps interpret results and keeps the dataset self-documented. |
+| `full_name`| string        | Human-readable name of the parameter, e.g. “arc cost”, “fix bidirection cost”. Used only for documentation. |
+| `source`   | string        | Short code or text describing the data source (e.g. `IEA2020`, `assumption`, `literature`). Useful for tracing where numbers came from. |
+| `comment`  | string        | Free-text notes about this parameter (e.g. calibration notes, methodological choices, links to papers). |
 
-> **Note:** Columns marked as *Optional / not yet used* are currently
-> ignored by the Python implementation but are kept for compatibility
-> with the original GAMS version and for future extensions.
+> **Note:** Columns marked as *Optional / not yet used* are mainly
+> included for compatibility with the original GAMS version and for
+> possible future extensions.
 
 ---
 
