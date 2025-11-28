@@ -12,6 +12,7 @@ nav:
   - Input Files:
       - Nodes: input_files/nodes.md
       - Arces: input_files/arcs.md
+      - Scalars / Other parameters: input_files/others.md
   - Usage:
       - Running the Model: docs/run_model.md
       - Results: docs/results.md
