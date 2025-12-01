@@ -1,0 +1,5 @@
+﻿region,country,node_id,nuts2,lat,lon,gas_share,hydrogen_share,status,node_name,source,comments
+EU,ES,ES300,ES30,40.4168,-3.7038,1,1,1,Madrid,,
+EU,ES,ES611,ES61,36.84,-2.46,1,1,1,Almería,,
+EU,PT,PT186,PT18,39.203,-7.933,1,1,1,Alto Alentejo,,
+AFR,DZ,DZ000,DZ00,36.7525,3.042,1,1,1,Algeria,,

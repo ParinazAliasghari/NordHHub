@@ -1,0 +1,5 @@
+start_country,end_country,start_node,end_node,arc_id,fuel,capacity,length_km,length_offshore_km,status ,bidirectional,reversible,opposite ,cal_x,cal_c,cal_b,cal_r,cal_l,source,comments
+ES,ES,ES300,ES611,ES300_ES611,gas,10,500,0,1,1,1,0,1,1,1,1,1,assumption,Spain internal pipeline Madrid–Almería
+ES,PT,ES300,PT186,ES300_PT186,gas,10,600,0,1,1,1,0,1,1,1,1,1,assumption,Spain–Portugal interconnection
+ES,DZ,ES611,DZ000,ES611_DZ000,gas,10,210,210,1,0,0,0,1,1,1,1,1,IEA2020,Almería–Algeria offshore pipeline (Medgaz-like)
+PT,ES,PT186,ES300,PT186_ES300,gas,10,600,0,1,0,0,0,1,1,1,1,1,assumption,Reverse direction of arc 2 (if not using bidirectional)

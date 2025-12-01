@@ -1,0 +1,5 @@
+regien,country,node_id,fuel,year,hour,demand,lower bound,penalty_cost
+EU,ES,ES300,gas,2025,1,50,0,1000
+EU,ES,ES611,gas,2025,1,20,0,1000
+EU,PT,PT186,gas,2025,1,15,0,1000
+AFR,DZ,DZ000,gas,2025,1,0,0,0

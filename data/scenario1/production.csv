@@ -1,0 +1,5 @@
+region,country,node_id,fuel,year,hour,production,lower_bound,upper_bound,marginal_cost,source,comments
+AFR,DZ,DZ000,gas,2025,1,12000,0,12000,0.01,IEA2023,Algerian gas export node
+EU,ES,ES300,hydrogen,2025,1,0,0,1000,0.1,assumption,Test case
+EU,ES,ES611,hydrogen,2025,1,0,0,1000,0.1,assumption,Test case
+EU,PT,PT186,hydrogen,2025,1,0,0,1000,0.1,assumption,Test case

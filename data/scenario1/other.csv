@@ -1,0 +1,39 @@
+scalar,name_id,fuel,value,low,high,type,unit,full_name,source,comment
+c_a,BFPipe,gas,0.5,,,var,€/MWh/100 km,arc cost,assumption,Base gas pipeline transport fee
+c_a,BFPipe,carbon,1,,,var,€/MWh/100 km,arc cost,assumption,Higher cost for CO? pipelines
+c_a,BFPipe,hydrogen,1,,,var,€/MWh/100 km,arc cost,assumption,H? pipelines ~2× cost of gas
+,,,,,,,,,,
+f_ab,Bidir,gas,500,,,fix,per project,fix bidirection cost,assumption,Investment cost to allow reverse flow
+f_ab,Bidir,hydrogen,500,,,fix,per project,fix bidirection cost,assumption,Same as gas for simplicity
+f_ab,Bidir,carbon,500,,,fix,per project,fix bidirection cost,assumption,
+,,,,,,,,,,
+c_ab,Bidir,gas,0.05,,,var,€/MWh/100 km,var bidirection cost,assumption,Small extra cost for reverse operation
+c_ab,Bidir,hydrogen,0.05,,,var,€/MWh/100 km,var bidirection cost,assumption,
+c_ab,Bidir,carbon,0.05,,,var,€/MWh/100 km,var bidirection cost,assumption,
+,,,,,,,,,,
+c_x,BFPipe,gas,0.1,,,var,€/MWh/100 km,operational cost,assumption,Extra OPEX factor
+c_x,BFPipe,hydrogen,0.15,,,var,€/MWh/100 km,operational cost,assumption,H? more expensive
+c_x,BFPipe,carbon,0.08,,,var,€/MWh/100 km,operational cost,assumption,
+,,,,,,,,,,
+c_r,RepurpArc,gas,2000,,,var,per 100 km per GWh,repurpose cost,assumption,Repurposing old gas pipelines
+c_r,RepurpArc,hydrogen,2000,,,var,per 100 km per GWh,repurpose cost,assumption,
+c_r,RepurpArc,carbon,2000,,,var,per 100 km per GWh,repurpose cost,assumption,
+,,,,,,,,,,
+f_r,RepurpArc,gas,2000,,,fix,per project,fix repurpose cost,assumption,
+f_r,RepurpArc,hydrogen,2000,,,fix,per project,fix repurpose cost,assumption,
+f_r,RepurpArc,carbon,2000,,,fix,per project,fix repurpose cost,assumption,
+,,,,,,,,,,
+YearStep,YearStep,,5,,,fix,years,time-step length,assumption,5-year planning intervals
+,,,,,,,,,,
+Vola2,Vol2,gas,1,,,fix,-,volume parameter,assumption,
+Vola2,Vol3,hydrogen,1.3,,,fix,-,volume parameter,assumption,H? volume factor ? 1.3
+Vola2,Vol4,carbon,0.5,,,fix,-,volume parameter,assumption,
+,,,,,,,,,,
+scale,Scale1,,6,,,fix,-,scale parameter,assumption,
+scale,Scale2,,6,,,fix,-,,,
+scale,Scale3,,18,,,fix,-,,,
+,,,,,,,,,,
+c_bl,Blend,hydrogen_to_gas,100,,,fix,€/MWh,blending cost,assumption,cost for H? injection
+c_bl,BlendCost,hydrogen_to_gas,2,,,fix,€/MWh,blending operation cost,assumption,
+c_bl,BlendLim,hydrogen_to_gas,0,,,fix,%,min H? blend limit,assumption,
+c_bl,BlendLim,hydrogen_to_gas,2,,,fix,%,max H? blend limit,assumption,
