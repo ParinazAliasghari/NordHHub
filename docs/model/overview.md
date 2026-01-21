@@ -45,7 +45,7 @@ Figure 2 shows repurposing of arcs. Figure 2a indicates how a single arc (for â€
 Investment periods each contain one or more operational hours. Operational hours are decoupled from each other (because we do not model storage balances). Figure 3 illustrates the two period types considered in the model.
 
 <p align="center">
-  <img src="assets/figures/Figure3.png" width="700">
+  <img src="assets/figures/Figure3.png" width="600">
 </p>
 <p align="center"><em>Figure 3. MGET time structure: investment and operational periods.</em></p>
 
