@@ -1,6 +1,6 @@
 # Mathematical formulation
 
-This section describes the mathematical formulation of the MGET model.
+This section describes the mathematical formulation of the MGET model. 
 
 ## Objective function
 
