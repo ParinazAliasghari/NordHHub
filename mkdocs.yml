@@ -1,23 +1,35 @@
 site_name: Documentation
+
 theme:
   name: material
 
 nav:
   - Home: index.md
-  - Introduction: docs/introduction.md
+  - Introduction: introduction.md
+
   - Model:
-    - Overview: docs/model/model-overview.md
-    # add later:
-    # - Assumptions: docs/model/assumptions.md
-    # - Math formulation: docs/model/math-formulation.md
+      - Overview: model/model-overview.md
+      - Math formulation: model/math-formulation.md
+
   - Model Elements:
-      - Data Loading: docs/load_module.md
-      - Model Builder: docs/model_builder.md
-      - Reporting: docs/reporting.md
+      - Data Loading: load_module.md
+      - Model Builder: model_builder.md
+      - Reporting: reporting.md
+
   - Input Files:
       - Nodes: input_files/nodes.md
-      - Arces: input_files/arcs.md
+      - Arcs: input_files/arcs.md
       - Scalars / Other parameters: input_files/others.md
+
   - Usage:
-      - Running the Model: docs/run_model.md
-      - Results: docs/results.md
+      - Running the Model: run_model.md
+      - Results: results.md
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
