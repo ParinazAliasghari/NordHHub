@@ -5,6 +5,11 @@ theme:
 nav:
   - Home: index.md
   - Introduction: docs/introduction.md
+  - Model:
+    - Overview: docs/model/model-overview.md
+    # add later:
+    # - Assumptions: docs/model/assumptions.md
+    # - Math formulation: docs/model/math-formulation.md
   - Model Elements:
       - Data Loading: docs/load_module.md
       - Model Builder: docs/model_builder.md
