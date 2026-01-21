@@ -16,8 +16,7 @@
 
 Unless otherwise stated, parameters may depend on investment period `y` and fuel `e`, and many also depend on operational period `h`. 
 
-- `bigM` [1]  
-  Large constant used in several constraints (e.g., McCormick reformulations).
+- `bigM` [1] : Large constant used in several constraints (e.g., McCormick reformulations).
 
 ### Costs
 - `c_a[a,e,y]` [€/MWh] : variable transport/usage cost on arc `a`.
@@ -87,7 +86,5 @@ All variables are nonnegative unless stated otherwise. `B_B` and `B_R` are binar
 - `Z_U[n,e,y,h]` [GWh/h] : supply surplus due to upper bound. 
 
 ## Implementation note (Python)
-
-# In the Python implementation, sets are stored as Python containers (lists/sets), and parameters are stored as dictionaries keyed by tuples, e.g. `cap_p[(n,e,y,h)]`. Arc incidence is represented via `in_arcs[n]` and `out_arcs[n]`, and the reverse-arc mapping is represented by `rev[a]`. 
 
 
