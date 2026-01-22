@@ -19,23 +19,25 @@ $$
 \begin{aligned}
 \min \; \sum_{n,e,y} r_y \Bigg[
 & \sum_{a \in A_n^-} \Big(
-c^X_{aey} \, X^A_{aey}
-+ \sum_{f} f^R_{aefy} \, B^R_{aefy}
-+ \sum_{f} c^R_{aefy} \, K^R_{aefy}
-+ f^B_{ay} \, B^B_{ay}
-+ c^B_{ay} \, K^B_{ay}
+c^X_{aey}\, X^A_{aey}
++ \sum_{f} f^R_{aefy}\, B^R_{aefy}
++ \sum_{f} c^R_{aefy}\, K^R_{aefy}
++ f^B_{ay}\, B^B_{ay}
++ c^B_{ay}\, K^B_{ay}
 \Big) \\
 & \;+\; \sum_{h_y} n_h \Big(
-c^P_{ney} \, Q^P_{neyh_y}
-+ \sum_{a \in A_n^-} c^A_{aey} \, F^A_{aeyh_y}
-+ c^E_{ney} \, Q^E_{neyh_y}
-+ c^{ZD}_{ney} \, Z^D_{neyh_y}
-+ c^{ZP}_{ney} \, \big(Z^L_{neyh_y} + Z^U_{neyh_y}\big)
+c^P_{ney}\, Q^P_{neyh_y}
++ \sum_{a \in A_n^-} c^A_{aey}\, F^A_{aeyh_y}
++ c^E_{ney}\, Q^E_{neyh_y}
++ c^{ZD}_{ney}\, Z^D_{neyh_y}
++ c^{ZP}_{ney}\, \big(Z^L_{neyh_y} + Z^U_{neyh_y}\big)
 \Big)
 \Bigg]
 \end{aligned}
 \qquad (1)
 $$
+
+
 
 ## Operational restrictions
 
