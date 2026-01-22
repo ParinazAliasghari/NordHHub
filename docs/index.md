@@ -10,15 +10,6 @@ The Python version reproduces the core mathematical structure and introduces a m
 - Pyomo model builder  
 - Flexible reporting and CSV output
 
-Math inline test: $x^2 + 1$
-
-Math block test:
-
-$$
-x^2 + 1
-$$
-
-
 ---
 
 ## Documentation Structure
