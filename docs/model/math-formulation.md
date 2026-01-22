@@ -46,30 +46,31 @@ Demand for each fuel must be met, at the nodal (Eq. 3a), country (Eq. 3b), EU (E
 To ensure feasibility, we allow demand deficits (Eq. 3a–d), which are typically heavily penalized in the objective function.
 
 **Nodal demand:**
+
 $$
-Q_S(n,e,y,h) + Z_D(n,e,y,h) = D(n,e,y,h)
-\tag{3a}
+Q_S(n,e,y,h) + Z_D(n,e,y,h) = D(n,e,y,h) \qquad (3a)
 $$
 
 **Country-level demand:**
+
 $$
-\sum_{n \in N_c} Q_S(n,e,y,h) + Z_D(c,e,y,h) = D(c,e,y,h)
-\tag{3b}
+\sum_{n \in N_c} Q_S(n,e,y,h) + Z_D(c,e,y,h) = D(c,e,y,h) \qquad (3b)
 $$
 
 **EU-level demand:**
+
 $$
-\sum_{n \in N_{EU}} Q_S(n,e,y,h) + Z_D(EU,e,y,h) = D(EU,e,y,h)
-\tag{3c}
+\sum_{n \in N_{EU}} Q_S(n,e,y,h) + Z_D(EU,e,y,h) = D(EU,e,y,h) \qquad (3c)
 $$
 
 **System-level demand:**
+
 $$
-\sum_{n \in N} Q_S(n,e,y,h) + Z_D(sys,e,y,h) = D(sys,e,y,h)
-\tag{3d}
+\sum_{n \in N} Q_S(n,e,y,h) + Z_D(sys,e,y,h) = D(sys,e,y,h) \qquad (3d)
 $$
 
 > **Note:** Depending on the model setup, one or more of these demand aggregation levels are enforced.
+
 
 
 ### Mass balance
