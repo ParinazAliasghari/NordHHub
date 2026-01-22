@@ -29,17 +29,14 @@ Supply capacity restrictions:
 - Supply may have a lower bound (Eq. 2b), e.g. to reflect extraction from storage or supply by an electrolyzer.
 - To ensure feasibility, we allow supply surpluses in Eq. 2b, which are typically heavily penalized in the objective function.
 
-**(2a)**
-
 $$
-Q_P \le \overline{Q}_P
+Q_P \le \overline{Q}_P \qquad (2a)
 $$
 
-**(2b)**
+$$
+Q_P \ge \underline{Q}_P - Z_U \qquad (2b)
+$$
 
-$$
-Q_P \ge \underline{Q}_P - Z_U
-$$
 
 
 ### Demand
