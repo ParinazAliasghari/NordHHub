@@ -15,7 +15,7 @@ Typically, investment costs are about three orders of magnitude larger than year
 
 **Objective (1):**
 
-$$
+```math
 \begin{aligned}
 \min \; \sum_{n,e,y} r_y \Bigg[
 & \sum_{a \in A_n^-} \Big(
@@ -35,7 +35,7 @@ c^P_{ney}\, Q^P_{neyh_y}
 \Bigg]
 \end{aligned}
 \qquad (1)
-$$
+
 
 
 
