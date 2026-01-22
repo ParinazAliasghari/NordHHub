@@ -20,6 +20,10 @@ $$
 $$
 
 
+where:
+- $C^{inv}$ = discounted investment costs (new arcs, repurposing, bidirectionality),
+- $C^{op}$  = operational costs (supply and transport, scaled by the number of hours represented by each operational period),
+- $C^{pen}$ = penalty costs (demand deficits, supply surpluses, and supply deficits).
 
 
 ## Operational restrictions
