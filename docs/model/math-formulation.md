@@ -14,10 +14,12 @@ Operational costs include supply and transport, and exclude demand and storage c
 Typically, investment costs are about three orders of magnitude larger than yearly operational costs, and one–two orders of magnitude larger than refurbishment costs. Operational costs must be scaled to reflect the number of hours in a year represented by an operational period.
 
 **Objective:**
-$$
+
+\[
 \min \; \text{Total discounted investment cost} + \text{Operational cost} + \text{Penalty terms}.
 \tag{1}
-$$
+\]
+
 
 
 ## Operational restrictions
