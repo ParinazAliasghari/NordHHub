@@ -78,10 +78,11 @@ $$
 Hourly, fuel-specific nodal mass balance (Eq. 4) equates production plus loss-corrected inflows and storage extraction to deliveries, outflows and storage injection.
 
 $$
-Q_P(n,e,y,h) + \sum_{a \in In(n)} \eta_{a,e} F_A(a,e,y,h) + Q_{W,ext}(n,e,y,h)
-=
-Q_S(n,e,y,h) + \sum_{a \in Out(n)} F_A(a,e,y,h) + Q_{W,inj}(n,e,y,h)
-\tag{4}
+\begin{aligned}
+Q_P(n,e,y,h) + \sum_{a \in In(n)} \eta_{a,e} \, F_A(a,e,y,h) + Q_{W,ext}(n,e,y,h)
+&= Q_S(n,e,y,h) + \sum_{a \in Out(n)} F_A(a,e,y,h) + Q_{W,inj}(n,e,y,h)
+\end{aligned}
+\qquad (4)
 $$
 
 
@@ -90,13 +91,11 @@ $$
 We set lower and upper bounds for storage injection and extraction:
 
 $$
-\underline{Q}_{W,inj} \le Q_{W,inj} \le \overline{Q}_{W,inj}
-\tag{5a}
+\underline{Q}_{W,inj} \le Q_{W,inj} \le \overline{Q}_{W,inj} \qquad (5a)
 $$
 
 $$
-\underline{Q}_{W,ext} \le Q_{W,ext} \le \overline{Q}_{W,ext}
-\tag{5b}
+\underline{Q}_{W,ext} \le Q_{W,ext} \le \overline{Q}_{W,ext} \qquad (5b)
 $$
 
 
@@ -105,8 +104,7 @@ $$
 We set an upper limit for the blending percentage (extension / to be implemented).
 
 $$
-\text{(Blending constraint to be added)}
-\tag{5c}
+\text{(Blending constraint to be added)} \qquad (5c)
 $$
 
 
