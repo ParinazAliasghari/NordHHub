@@ -2,28 +2,55 @@
 
 This section describes the mathematical formulation of the MGET model. 
 
-## Objective function
+### Objective function
 
-The objective function (Eq. 1) minimizes discounted investment and operational costs. Investment related to arcs can be in:
-- new arcs,
-- repurposing for fuel,
-- making arcs bidirectional.
-
-Operational costs include supply and transport, and exclude demand and storage costs. We also include penalty terms for demand deficits, supply surpluses, and supply deficits.
-
-Typically, investment costs are about three orders of magnitude larger than yearly operational costs, and one–two orders of magnitude larger than refurbishment costs. Operational costs must be scaled to reflect the number of hours in a year represented by an operational period.
+The objective function (Eq. 1) minimizes discounted investment and operational costs. Operational costs must be scaled to reflect the number of hours represented by each operational period. We also include penalty terms for demand deficits, supply surpluses, and supply deficits.
 
 **Objective (1):**
 
 $$
-\min \; \sum_{y} r_y \left( C^{inv}_y + \sum_{h \in H_y} n_h \, C^{op}_{y,h} \right) + C^{pen} \qquad (1)
+\min \; \sum_{y} r_y \left( C^{inv}_y + \sum_{h \in H_y} n_h \, C^{op}_{y,h} \right) + C^{pen}
+\qquad (1)
 $$
 
-
 where:
-- $C^{inv}$ = discounted investment costs (new arcs, repurposing, bidirectionality),
-- $C^{op}$  = operational costs (supply and transport, scaled by the number of hours represented by each operational period),
-- $C^{pen}$ = penalty costs (demand deficits, supply surpluses, and supply deficits).
+
+- $r_y$ is the discount factor for investment period $y$.
+- $H_y$ is the set of operational hours represented in investment period $y$.
+- $n_h$ is the weight of operational hour $h$ (number of real hours represented).
+
+---
+
+#### Investment cost component
+
+Investment costs include new arcs, repurposing for fuel, and investments to make arcs bidirectional:
+
+$$
+C^{inv}_y = C^{new}_y + C^{rep}_y + C^{bid}_y
+\qquad (1a)
+$$
+
+---
+
+#### Operational cost component
+
+Operational costs include supply and transport costs:
+
+$$
+C^{op}_{y,h} = C^{sup}_{y,h} + C^{tr}_{y,h}
+\qquad (1b)
+$$
+
+---
+
+#### Penalty cost component
+
+Penalty costs represent violations of demand satisfaction and supply bounds:
+
+$$
+C^{pen} = C^{dem\_def} + C^{sup\_sur} + C^{sup\_def}
+\qquad (1c)
+$$
 
 
 ## Operational restrictions
