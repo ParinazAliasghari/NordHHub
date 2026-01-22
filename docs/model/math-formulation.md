@@ -16,9 +16,8 @@ Typically, investment costs are about three orders of magnitude larger than year
 **Objective (1):**
 
 $$
-\min \; \text{Total discounted investment cost} + \text{Operational cost} + \text{Penalty terms}.
+\min \; \Big( \text{Total discounted investment cost} + \text{Operational cost} + \text{Penalty terms} \Big).
 $$
-
 
 
 ## Operational restrictions
