@@ -1,0 +1,3 @@
+A,start,end,F,len,off,cal_b,cal_c,cal_l,cal_r,cal_x,cap,bidir,rev,opp
+N1_N2,N1,N2,G,160,0,0,0,1,1,1,6,0,,
+N1_N2_H,N1,N2,H,160,0,0,0,1,0,1,0,0,,
