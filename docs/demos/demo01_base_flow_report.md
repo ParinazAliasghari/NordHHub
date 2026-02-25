@@ -164,4 +164,4 @@ Residual = Production + inflow − outflow − Consumption
 ✔ Network flow logic is correct  
 ✔ Mass balance constraints satisfied  
 ✔ Slack variables unused  
-✔ Cost calculation reflects updated arc flow cost (`c_a = 2.0`)  
+✔ Cost calculation reflects updated arc flow cost
