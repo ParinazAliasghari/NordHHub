@@ -192,5 +192,4 @@ Residual = Production + inflow − outflow − Consumption
 ✔ Mass balance constraints satisfied  
 ✔ Slack variables unused  
 ✔ Expansion cost is activated 
-
 ✔ Cost calculation reflects updated arc flow cost   
