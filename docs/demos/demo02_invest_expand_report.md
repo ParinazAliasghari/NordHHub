@@ -127,13 +127,11 @@ $$
 
 ## Results Summary
 
-Key values extracted from [results/demo02_invest_expand/summary_demo02_invest_expand_20260225_200241.csv](results/demo02_invest_expand/summary_demo02_invest_expand_20260225_200241.csv):
-
-- objective = 69.29411764705883
-- production_cost = 21.764705882352942
-- arc_flow_cost = 43.529411764705884
+- objective = 69.3
+- production_cost = 21.8
+- arc_flow_cost = 43.5
 - arc_investment_cost = 4.0
-- total_reconstructed = 69.29411764705883
+- total_reconstructed = 69.3
 - sum_ZDS = 0.0
 - sum_ZN2 = 0.0
 
@@ -193,5 +191,5 @@ Residual = Production + inflow − outflow − Consumption
 ✔ Network flow logic across multiple years  
 ✔ Mass balance constraints satisfied  
 ✔ Slack variables unused  
-✔ Expansion cost is activated (`expansion_total = 2.0`, `arc_investment_cost = 4.0`)  
-✔ Cost calculation reflects updated `c_a` and `c_{ax}` coefficients  
+✔ Expansion cost is activated 
+✔ Cost calculation reflects updated arc flow cost   
