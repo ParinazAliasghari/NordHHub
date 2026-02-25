@@ -112,8 +112,6 @@ $$
 
 ## Results Summary
 
-Key values extracted from [results/demo01_base_flow/summary_demo01_base_flow_20260225_173846.csv](results/demo01_base_flow/summary_demo01_base_flow_20260225_173846.csv):
-
 - objective = 30.0
 - production_cost = 10.0
 - arc_flow_cost = 20.0
@@ -164,4 +162,4 @@ Residual = Production + inflow − outflow − Consumption
 ✔ Network flow logic is correct  
 ✔ Mass balance constraints satisfied  
 ✔ Slack variables unused  
-✔ Cost calculation reflects updated arc flow cost
+✔ Cost calculation reflects updated arc flow cost  
