@@ -22,7 +22,7 @@ This scenario validates the minimal feasible configuration of the model:
 
 From repository root:
 
-python -m scr.run --scenario demo01_base_flow
+python -m scr.core.run --scenario demo01_base_flow
 
 ---
 
@@ -39,15 +39,16 @@ python -m scr.run --scenario demo01_base_flow
 
 ### arcs.csv
 
-| a | start | end | f | cap | bidir |
-|---|---|---|---|---:|---|
-| N1_N2 | N1 | N2 | G | 10 | 0 |
+| a | start | end | f | len | off | cal_c | cap | bidir |
+|---|---|---|---|---:|---:|---:|---:|---:|
+| N1_N2 | N1 | N2 | G | 160 | 0 | 0 | 6 | 0 |
 
 Interpretation:
 
 - Flow allowed from `start → end`
 - Carrier defined by column `f`
 - No reverse flow (`bidir = 0`)
+- `cal_c = 0` is treated as `1.0` in the loader
 
 ---
 
@@ -84,21 +85,39 @@ Interpretation:
 
 | param | indx1 | indx2 | value |
 |---|---|---|---:|
-| ... | ... | ... | ... |
+| BFPipe |  |  | 1 |
+| Vola2 | G |  | 1 |
+| Pipe | Len | Std | 80 |
+| OffshMult |  |  | 20 |
 
 Only parameters relevant for this demo:
 
 - Production cost parameters
 - Slack penalties (`ZDS`, `ZN2`)
-- Transport cost parameters (if defined)
+- Transport cost parameters
+
+Arc flow cost coefficient (`c_a`) is computed as:
+
+$$
+c_a = \text{BFPipe} \cdot \text{Vola2}(G) \cdot \frac{(\text{len} + \text{offsh\_mult} \cdot \text{off}) \cdot \text{cal\_c}}{\text{PipeLenStd}}
+$$
+
+With demo01 inputs:
+
+$$
+c_a = 1 \cdot 1 \cdot \frac{(160 + 19 \cdot 0) \cdot 1}{80} = 2.0
+$$
 
 ---
 
 ## Results Summary
 
-Key values extracted from `summary_*.csv`:
+Key values extracted from [results/demo01_base_flow/summary_demo01_base_flow_20260225_173846.csv](results/demo01_base_flow/summary_demo01_base_flow_20260225_173846.csv):
 
-- objective = 10.0
+- objective = 30.0
+- production_cost = 10.0
+- arc_flow_cost = 20.0
+- total_reconstructed = 30.0
 - sum_ZDS = 0.0
 - sum_ZN2 = 0.0
 
@@ -145,4 +164,4 @@ Residual = Production + inflow − outflow − Consumption
 ✔ Network flow logic is correct  
 ✔ Mass balance constraints satisfied  
 ✔ Slack variables unused  
-✔ Cost calculation behaves as expected  
+✔ Cost calculation reflects updated arc flow cost (`c_a = 2.0`)  
