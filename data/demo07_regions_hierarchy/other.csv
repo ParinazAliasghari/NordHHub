@@ -1,0 +1,15 @@
+param,indx1,indx2,value
+bigM,,,1e9
+discRate,,,0.05
+yearStep,,,5
+blendCost,,,0
+Pipe,Len,Std,80
+penalty,ZD,G,1000
+penalty,ZD2,G,1000
+penalty,ZXA,G,1000
+penalty,ZMS,G,1000
+penalty,ZMD,G,1000
+penalty,ZPL,G,1000
+penalty,ZPU,G,1000
+vola2,G,,1.0
+vols2,G,,1.0
