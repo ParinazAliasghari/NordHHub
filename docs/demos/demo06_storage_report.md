@@ -203,12 +203,3 @@ Utilization: 8.08 / 35040 = 0.023% (tiny fraction, but sufficient for the 2-hour
 ✔ **Net-zero shortage**: ZDS and ZN2 both zero (all demand satisfied)  
 ✔ **Time-shifting economics**: Cost of storage operations (35040 EUR) is acceptable vs. shortage penalties
 
----
-
-## Key Insights
-
-1. **Storage is activated by supply/demand mismatch in time**: Production available in h=1 but demand peaks in h=2.
-2. **Hourly limits matter**: Injection/extraction caps (I=9, X=8) enforce realistic operational constraints.
-3. **Efficiency loss is modeled**: The 1% cycle loss (cal_l=1) requires slightly more injection than extraction.
-4. **scaleUp scaling is critical**: With sum(scaleUp)=8760, working-gas capacity becomes interpretable (W in GWh).
-5. **No network bottleneck**: Arc capacity (20) is ample, so storage is the binding time-shift mechanism.
