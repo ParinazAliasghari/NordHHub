@@ -25,8 +25,8 @@ python -m scr.core.run --scenario demo02_invest_expand
 
 | n | cn | nuts2 |
 |---|---|---|
-| N1 | C1 | R1 |
-| N2 | C1 | R1 |
+| N1 | C1 | N1 |
+| N2 | C1 | N2 |
 
 ---
 

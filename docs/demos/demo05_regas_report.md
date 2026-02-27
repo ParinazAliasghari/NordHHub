@@ -27,8 +27,8 @@ python -m scr.core.solve_pipeline data/demo05_regas/other.csv
 
 | n | cn | nuts2 | G | H |
 |---|---|---|---|---|
-| N1 | C1 | R1 | 1 | 0 |
-| N2 | C1 | R1 | 1 | 0 |
+| N1 | C1 | N1 | 1 | 0 |
+| N2 | C2 | N2 | 1 | 0 |
 
 Interpretation:
 

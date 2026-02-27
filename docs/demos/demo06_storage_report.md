@@ -33,8 +33,8 @@ python -m scr.core.solve_pipeline data/demo06_storage/other.csv
 
 | n | cn | nuts2 |
 |---|---|---|
-| N1 | C1 | R1 |
-| N2 | C1 | R1 |
+| N1 | C1 | N1 |
+| N2 | C2 | N2 |
 
 Supply at N1, demand at N2.
 

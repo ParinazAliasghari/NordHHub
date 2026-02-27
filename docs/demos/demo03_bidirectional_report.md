@@ -19,32 +19,6 @@ python -m scr.core.run --scenario data/demo03_bidirectional
 
 ---
 
-## Input Data
-
-### nodes.csv
-
-| n | cn | nuts2 |
-|---|---|---|
-# Demo 03 — Bidirectional Flow (B_BD and K_BD Active)
-
-Scenario: `demo03_bidirectional`  
-Folder: [data/demo03_bidirectional](data/demo03_bidirectional)
-
----
-
-## Purpose
-
-This scenario activates bidirectional costs by forcing reverse-direction flow above the base capacity of the reverse arc, which triggers `K_OPP`, `B_BD`, and `K_BD` while keeping scale factors small.
-
----
-
-## How to run
-
-From repository root:
-
-python -m scr.core.run --scenario data/demo03_bidirectional
-
----
 
 ## Input Data
 
