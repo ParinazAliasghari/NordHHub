@@ -1,7 +1,7 @@
-# SYMBOL MAPPING (GAMS ↔ Python)
+# Symbol Mapping (GAMS ↔ Python)
 
 ## Introduction
-This guide maps core model symbols between the original GAMS implementation (`src/MGET.gms`, `src/load_input_from_Excel.gms`) and the Python/Pyomo implementation (`scr/model.py`, `scr/data_loading.py`).
+This guide maps core model symbols between the original GAMS implementation (`src/MGET.gms`, `src/load_input_from_Excel.gms`) and the Python/Pyomo implementation (`scr/core/model.py`, `scr/core/data_loading.py`).
 
 Scenario data in this repository is loaded from CSV files equivalent to the original Excel sheets:
 - `arcs.csv` (Sheet A)
