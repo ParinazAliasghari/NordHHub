@@ -1,5 +1,4 @@
-# Multigas Energy Transition Model (Python)
-
+# Multigas Energy Transition Model
 **Data Loading · Model Builder · Validation · Reporting · Documentation**
 
 ---
