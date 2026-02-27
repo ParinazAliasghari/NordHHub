@@ -1,3 +1,5 @@
+# MGET – Multi-Gas Energy Transition Model
+
 The **Multigas Energy Transition (MGET)** model is an open-source Python optimization framework
 for analyzing, planning, and transforming gas and multi-energy networks.
 
