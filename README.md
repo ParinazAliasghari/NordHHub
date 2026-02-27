@@ -84,4 +84,25 @@ Additionally:
 - `runs_<scenario>.csv`  
   Maintains a cumulative history of all executed runs for that scenario
 
+## 4. `docs/` — Documentation
 
+This folder contains project documentation, reports, and technical notes.
+
+```
+docs/
+├── demos/
+│   ├── demo01_base_flow_report.md
+│   ├── demo02_invest_expand_report.md
+│   ├── demo03_bidirectional_report.md
+│   ├── demo04_repurpose_report.md
+│   ├── demo05_regas_report.md
+│   ├── demo06_storage_report.md
+│   ├── demo07_regions_hierarchy_report.md
+│   └── demo08_full_min_report.md
+│
+├── input_files/
+├── javascripts/
+├── model/
+├── introduction.md
+└── load_module.md
+```
