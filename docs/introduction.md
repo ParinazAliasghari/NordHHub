@@ -7,7 +7,7 @@ It supports energy transition studies by representing multiple fuels, long-term
 infrastructure investment, storage, repurposing, and hourly operational dynamics
 within a single integrated optimization model.
 
-MGET is implemented in **Python using Pyomo** and formulated as a
+This documentation describes the open-source Python implementation of MGET, based on the original GAMS formulation developed by Ruud Egging (NTNU). MGET is implemented in **Python using Pyomo** and formulated as a
 **linear or mixed-integer linear optimization problem**.
 
 
