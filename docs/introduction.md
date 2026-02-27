@@ -8,6 +8,8 @@ within a single integrated optimization model.
 MGET is implemented in **Python using Pyomo** and formulated as a
 **linear or mixed-integer linear optimization problem**.
 
+
+## Code Structure
 All main scripts are located in the `scr/` directory,
 with core model logic implemented inside `scr/core/`.
 
