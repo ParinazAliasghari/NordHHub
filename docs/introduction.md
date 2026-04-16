@@ -11,6 +11,15 @@ This documentation describes the open-source Python implementation of MGET, base
 **linear or mixed-integer linear optimization problem**.
 
 
+## ▶️ Running the Model
+
+The model is executed via the command-line interface:
+
+```bash
+python -m scr.run --scenario scenario_name
+
+
+
 ## Code Structure
 All main scripts are located in the `scr/` directory,
 with core model logic implemented inside `scr/core/`.
