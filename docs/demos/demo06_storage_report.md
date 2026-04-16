@@ -117,19 +117,18 @@ Cost formulas:
 
 Arc flow cost (same as demo01):
 $$
-c_a = 1 \cdot 1 \cdot \frac{(160 + 20 \cdot 0) \cdot 1}{80} = 2.0 \text{ EUR/GWh}
+c_{a} = 1 \cdot 1 \cdot \frac{(160 + 20 \cdot 0) \cdot 1}{80} = 2.0 \ \mathrm{EUR/GWh}
 $$
 
 Storage extraction cost:
 $$
-c_{\text{we}} = \text{Vols2}(G) \cdot \text{cal\_c} = 1 \cdot 1 = 1 \text{ EUR/GWh}
+c_{we} = \mathrm{Vols2}(G) \cdot \mathrm{cal\_c} = 1 \cdot 1 = 1 \ \mathrm{EUR/GWh}
 $$
 
 Storage efficiency (penalty for loss):
 $$
-e_w = 1 - 0.01 \times \text{cal\_l} = 0.99
+e_{w} = 1 - 0.01 \cdot \mathrm{cal\_l} = 0.99
 $$
-
 ---
 
 ## Results Summary
