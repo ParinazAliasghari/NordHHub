@@ -125,25 +125,33 @@ Only parameters relevant for this demo:
 Arc flow cost coefficient (`c_a`) is computed as:
 
 $$
- c_a = \text{BFPipe} \cdot \text{Vola2}(f) \cdot \frac{(\text{len} + \text{offsh\_mult} \cdot \text{off}) \cdot \text{cal\_c}}{\text{PipeLenStd}}
+c_{a} = \mathrm{BFPipe} \cdot \mathrm{Vola2}(f) \cdot
+\frac{(\mathrm{len} + \mathrm{offsh\_mult} \cdot \mathrm{off}) \cdot \mathrm{cal\_c}}
+{\mathrm{PipeLenStd}}
 $$
 
 Arc expansion cost coefficient (`c_{ax}`) is computed as:
 
 $$
- c_{ax} = \text{BIPipe}(f) \cdot \frac{(\text{len} + \text{offsh\_mult} \cdot \text{off}) \cdot \text{cal\_x}}{\text{PipeLenStd} \cdot \text{YearStep}}
+c_{ax} = \mathrm{BIPipe}(f) \cdot
+\frac{(\mathrm{len} + \mathrm{offsh\_mult} \cdot \mathrm{off}) \cdot \mathrm{cal\_x}}
+{\mathrm{PipeLenStd} \cdot \mathrm{YearStep}}
 $$
 
 Repurposing variable cost coefficient (`c_{ar}`) is computed as:
 
 $$
- c_{ar} = \text{RepurpArc}(e,f) \cdot \frac{(\text{len} + \text{off}) \cdot \text{cal\_r}}{\text{PipeLenStd} \cdot \text{YearStep}}
+c_{ar} = \mathrm{RepurpArc}(e, f) \cdot
+\frac{(\mathrm{len} + \mathrm{off}) \cdot \mathrm{cal\_r}}
+{\mathrm{PipeLenStd} \cdot \mathrm{YearStep}}
 $$
 
 Repurposing fixed cost coefficient (`f_{ar}`) is computed as:
 
 $$
- f_{ar} = \text{RepurpArc\_Fix}(f) \cdot \text{Vola2}(e) \cdot \frac{(\text{len} + \text{off}) \cdot \text{cal\_r}}{\text{PipeLenStd} \cdot \text{YearStep}}
+f_{ar} = \mathrm{RepurpArc\_Fix}(f) \cdot \mathrm{Vola2}(e) \cdot
+\frac{(\mathrm{len} + \mathrm{off}) \cdot \mathrm{cal\_r}}
+{\mathrm{PipeLenStd} \cdot \mathrm{YearStep}}
 $$
 
 With demo04 inputs:
