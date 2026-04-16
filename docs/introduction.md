@@ -10,14 +10,9 @@ within a single integrated optimization model.
 This documentation describes the open-source Python implementation of MGET, based on the original GAMS formulation developed by Ruud Egging (NTNU). MGET is implemented in **Python using Pyomo** and formulated as a
 **linear or mixed-integer linear optimization problem**.
 
-
-## Running the Model
-
-The model is executed via the command-line interface:
-
-```bash
-python -m scr.run --scenario demo08_full_min
-
+## Code Structure
+All main scripts are located in the `scr/` directory,
+with core model logic implemented inside `scr/core/`.
 
 ## Code Structure
 All main scripts are located in the `scr/` directory,
