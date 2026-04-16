@@ -106,17 +106,17 @@ Only parameters relevant for this demo:
 Arc flow cost coefficient (`c_a`) is computed as:
 
 $$
-c_{a} = \text{BFPipe} \cdot \text{Vola2}(G) \cdot
-\frac{(\text{len} + \text{offsh\_mult} \cdot \text{off}) \cdot \text{cal\_c}}
-{\text{PipeLenStd}}
+c_{a} = \mathrm{BFPipe} \cdot \mathrm{Vola2}(G) \cdot
+\frac{(\mathrm{len} + \mathrm{offsh\_mult} \cdot \mathrm{off}) \cdot \mathrm{cal\_c}}
+{\mathrm{PipeLenStd}}
 $$
 
 Bidirectional variable cost coefficient (`c_{ab}`) is computed as:
 
 $$
-c_{ab} = \text{BidirVar}(G) \cdot 
-\frac{(\text{len} + \text{off}) \cdot \text{cal\_b}}
-{\text{PipeLenStd} \cdot \text{YearStep}}
+c_{ab} = \mathrm{BidirVar}(G) \cdot
+\frac{(\mathrm{len} + \mathrm{off}) \cdot \mathrm{cal\_b}}
+{\mathrm{PipeLenStd} \cdot \mathrm{YearStep}}
 $$
 
 With demo03 inputs:
