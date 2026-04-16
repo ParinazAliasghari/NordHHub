@@ -84,7 +84,7 @@ Demand low in hour 1 (2 units), **peaks in hour 2 (8 units)**. Total demand = 10
 | 2025 | 2 | 4380 |
 
 **Critical:** `sum(scaleup) = 8760` to keep model scaling interpretable.  
-Working-gas capacity: $\text{cap\_ww} = 35040 \times \frac{8760}{8760} = 35040$ GWh.
+Working-gas capacity: $\mathrm{cap\_ww} = 35040 \cdot \frac{8760}{8760} = 35040\ \mathrm{GWh}$.
 
 ---
 
