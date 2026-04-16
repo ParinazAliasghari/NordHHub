@@ -14,6 +14,7 @@ This scenario demonstrates storage operational behavior under the CURRENT model 
 - Storage works with **non-unity efficiency** (1% loss: e_w = 0.99)
 - No shortages (`ZDS = 0`, `ZN2 = 0`)
 - Illustrates the working-gas capacity constraint:
+
 $$
 \mathrm{cap\_ww} = W \cdot \frac{\sum_{h} \mathrm{scaleUp}(h)}{8760}
 $$
