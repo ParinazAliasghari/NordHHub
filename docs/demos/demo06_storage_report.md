@@ -13,7 +13,10 @@ This scenario demonstrates storage operational behavior under the CURRENT model 
 - Supply concentrated in hour 1 requires time-shifting to meet hour 2 demand
 - Storage works with **non-unity efficiency** (1% loss: e_w = 0.99)
 - No shortages (`ZDS = 0`, `ZN2 = 0`)
-- Illustrates the working-gas capacity constraint: $\text{cap\_ww} = W \times \frac{\sum_h \text{scaleUp}(h)}{8760}$
+- Illustrates the working-gas capacity constraint:
+$$
+\mathrm{cap\_ww} = W \cdot \frac{\sum_{h} \mathrm{scaleUp}(h)}{8760}
+$$
 
 ---
 
