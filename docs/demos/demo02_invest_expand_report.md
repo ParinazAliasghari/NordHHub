@@ -112,7 +112,9 @@ $$
 Arc expansion cost coefficient (`c_{ax}`) is computed as:
 
 $$
- c_{ax} = \text{BIPipe}(G) \cdot \frac{(\text{len} + \text{offsh\_mult} \cdot \text{off}) \cdot \text{cal\_x}}{\text{PipeLenStd} \cdot \text{YearStep}}
+c_{ax} = \mathrm{BIPipe}(G) \cdot
+\frac{(\mathrm{len} + \mathrm{offsh\_mult} \cdot \mathrm{off}) \cdot \mathrm{cal\_x}}
+{\mathrm{PipeLenStd} \cdot \mathrm{YearStep}}
 $$
 
 With demo02 inputs:
